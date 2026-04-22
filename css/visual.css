@@ -1,0 +1,104 @@
+.visual {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.visual-box,
+.sw-visual,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.visual-bg1 {
+  background: url(../images/1-DESK-TRAIN-BRILLIANTLY.webp) no-repeat center;
+  background-size: cover;
+}
+.visual-bg2 {
+  background: url(../images/2-DESK-WHAT-IF.webp) no-repeat center;
+  background-size: cover;
+}
+.visual-bg3 {
+  background: url(../images/4-DESK-RUN-RECOVER-REPEAT.jpg) no-repeat center;
+  background-size: cover;
+}
+.visual-box > p {
+  background-color: var(--new-btn);
+  width: 125px;
+  line-height: 42px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  border-radius: 33px;
+  color: #8ec5ff;
+  align-items: center;
+  text-align: center;
+}
+.visual-text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+}
+.visual-text h1 {
+  font-size: 80px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+.AMOLED {
+  color: #d1d5dc;
+  margin-top: 25px;
+  margin-bottom: 33px;
+}
+.visual-btn {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 175px;
+}
+.visual-buy-btn {
+  text-align: center;
+  align-items: center;
+  font-weight: medium;
+  font-size: 20px;
+  background-color: var(--btn);
+  width: 125px;
+  line-height: 50px;
+  border-radius: 33px;
+}
+.visual-buy-btn a {
+  color: #fff;
+}
+.visual-btn2 {
+  text-align: center;
+  align-items: center;
+  font-weight: medium;
+  font-size: 20px;
+  background-color: #fff;
+  width: 125px;
+  line-height: 50px;
+  border-radius: 33px;
+}
+.visual-btn2 a {
+  color: #000;
+}
+.visual-min-txt {
+  display: flex;
+  gap: 85px;
+  align-items: center;
+}
+.visual-min-box {
+  display: flex;
+  flex-direction: column;
+}
+.min-txt {
+  color: var(--blue) !important;
+  font-size: 36px;
+  font-weight: bold;
+}
+.visual-min-box p {
+  color: #99a1af;
+  white-space: nowrap;
+}
+.visual-min-txt {
+  border-top: 1px solid #9498a0;
+  padding-top: 63px;
+  width: 600px;
+}
