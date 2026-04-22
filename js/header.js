@@ -1,9 +1,15 @@
-window.addEventListener("scroll", function(){
-  let header = document.getElementById("header");
+window.addEventListener("load", () => {
+  let scrollPos = 0;
+  const header = document.querySelector(".header");
+  window.addEventListener("scroll", () => {
+    scrollPos = window.scrollY;
 
-  if(window.scrollY > 500){
-    header.classList.add("scrolled");
-  }else{
-    header.classList.remove("scrolled");
-  }
+    window.requestAnimationFrame(() => {
+      if (scrollPos > 50) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+  });
 });

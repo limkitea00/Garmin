@@ -9,9 +9,12 @@
   height: 80px;
   z-index: 9;
   padding: 0 5%;
+  background-color: transparent;
+  transition: all 0.3s;
 }
 header.scrolled{
   background-color: black;
+  color: #fff;
 }
 .logo {
   font-weight: bold;

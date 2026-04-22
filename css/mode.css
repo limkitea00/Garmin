@@ -1,0 +1,11 @@
+.trail-title-box > p {
+  background-color: var(--green-bg);
+  width: 140px;
+  line-height: 42px;
+  border: 1px solid var(--green-border);
+  border-radius: 33px;
+  color: var(--green);
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
