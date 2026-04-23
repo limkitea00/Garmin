@@ -1,3 +1,29 @@
+.mode {
+  background: linear-gradient( #0c1321 0%, #111a2c 51%, #162138 100%);
+}
+.trail-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+}
+
+/* 왼쪽 컬럼 명시 */
+.trail-title-box,
+.trail-title,
+.trail-txt,
+.data {
+  grid-column: 1;
+}
+
+
+.trail-img img {
+  width: 590px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+/* 타이틀 위에 박스 */
 .trail-title-box > p {
   background-color: var(--green-bg);
   width: 140px;
@@ -8,4 +34,119 @@
   align-items: center;
   text-align: center;
   white-space: nowrap;
+}
+/* 타이틀 */
+.trail-title {
+  color: #fff;
+  font-size: 48px;
+  font-weight: medium;
+}
+/* 텍스트 */
+.trail-txt {
+  font-size: 20px;
+}
+
+.trail-txt p {
+  font-size: 20px;
+  color: #99a1af;
+  /* line-height: 1.7; */
+}
+/* 기능설명 */
+.data {
+  display: grid;
+  grid-column: 1;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  row-gap: 2px;
+  padding-top: 12px;
+}
+
+.data:last-child {
+  border-bottom: none;
+}
+
+.bullet {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  align-self: start;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+.green {
+  color: var(--green);
+}
+.data-title {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.data p:not(.data-title) {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 13px;
+  color: #99a1af;
+  line-height: 1.5;
+}
+/* 레이스 */
+.race-container{
+  display: flex;
+  justify-content: center;
+}
+.race-txt-box{
+  margin: 10px;
+}
+.race-title-box > p {
+  background-color: var(--purple-bg);
+  width: 115px;
+  line-height: 42px;
+  border: 1px solid var(--purple-border);
+  border-radius: 33px;
+  color: var(--purple);
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+.race-title{
+  font-size: 48px;
+  font-weight: medium;
+  color: #fff;
+}
+.race-title span{
+    font-size: 48px;
+  font-weight: medium;
+}
+.purple{
+  color: var(--purple);
+}
+.race-txt{
+  margin-top: 10px;
+  color: #99a1af;
+}
+.race-box{
+  display: flex;
+  margin-top: 32px;
+}
+.race-box-txt{
+  width: 258px;
+  height: 115px;
+  border: 1px solid #364153;
+  background-color: var(--box2);
+  border-radius: 14px;
+  padding: 23px 0;
+  padding-left: 25px;
+}
+.purple{
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.race-box-txt p{
+  color: #99a1af;
 }

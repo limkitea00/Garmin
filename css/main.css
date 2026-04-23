@@ -3,6 +3,7 @@
 @import url("visual.css");
 @import url("features.css");
 @import url("mode.css");
+@import url("watch.css");
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +40,10 @@ a {
   --green-txt: rgba(123, 241, 168, 1);
   --green-bg: rgba(0, 201, 80, 0.20000000298023224);
   --green-border: rgba(5, 223, 114, 0.30000001192092896);
+  --purple-bg: rgba(173, 70, 255, 0.20000000298023224);
+  --purple-border: rgba(194, 122, 255, 0.30000001192092896);
+  --purple: rgba(218, 178, 255, 1);
+  --watch-box: rgba(16, 24, 40, 0.5);
   /* Text-size styles */
   --inter--60: 60px;
   --inter--reg--20: 20px;
@@ -50,4 +55,7 @@ a {
 }
 .blue-txt {
   color: var(--blue) !important;
+}
+.purple{
+  color: var(--purple) !important;
 }
