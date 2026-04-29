@@ -4,6 +4,9 @@
 @import url("features.css");
 @import url("mode.css");
 @import url("watch.css");
+@import url("spec.css");
+@import url("last.css");
+@import url("footer.css");
 * {
   margin: 0;
   padding: 0;

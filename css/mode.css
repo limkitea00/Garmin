@@ -1,5 +1,5 @@
 .mode {
-  background: linear-gradient( #0c1321 0%, #111a2c 51%, #162138 100%);
+  background: linear-gradient(#0c1321 0%, #111a2c 51%, #162138 100%);
 }
 .trail-container {
   display: flex;
@@ -16,12 +16,12 @@
   grid-column: 1;
 }
 
-
 .trail-img img {
   width: 590px;
   height: 400px;
   object-fit: cover;
   display: block;
+  border-radius: 16px;
 }
 /* 타이틀 위에 박스 */
 .trail-title-box > p {
@@ -96,11 +96,11 @@
   line-height: 1.5;
 }
 /* 레이스 */
-.race-container{
+.race-container {
   display: flex;
   justify-content: center;
 }
-.race-txt-box{
+.race-txt-box {
   margin: 10px;
 }
 .race-title-box > p {
@@ -114,27 +114,27 @@
   text-align: center;
   white-space: nowrap;
 }
-.race-title{
+.race-title {
   font-size: 48px;
   font-weight: medium;
   color: #fff;
 }
-.race-title span{
-    font-size: 48px;
+.race-title span {
+  font-size: 48px;
   font-weight: medium;
 }
-.purple{
+.purple {
   color: var(--purple);
 }
-.race-txt{
+.race-txt {
   margin-top: 10px;
   color: #99a1af;
 }
-.race-box{
+.race-box {
   display: flex;
   margin-top: 32px;
 }
-.race-box-txt{
+.race-box-txt {
   width: 258px;
   height: 115px;
   border: 1px solid #364153;
@@ -143,10 +143,10 @@
   padding: 23px 0;
   padding-left: 25px;
 }
-.purple{
+.purple {
   font-size: 30px;
   padding-bottom: 10px;
 }
-.race-box-txt p{
+.race-box-txt p {
   color: #99a1af;
 }

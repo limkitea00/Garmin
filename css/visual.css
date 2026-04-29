@@ -59,8 +59,7 @@
   font-weight: medium;
   font-size: 20px;
   background-color: var(--btn);
-  width: 125px;
-  line-height: 50px;
+  padding: 15px 20px;
   border-radius: 33px;
 }
 .visual-buy-btn a {
@@ -72,8 +71,7 @@
   font-weight: medium;
   font-size: 20px;
   background-color: #fff;
-  width: 125px;
-  line-height: 50px;
+  padding: 15px 20px;
   border-radius: 33px;
 }
 .visual-btn2 a {
