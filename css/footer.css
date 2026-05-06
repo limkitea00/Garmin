@@ -57,3 +57,29 @@
   font-size: 14px;
   color: #6a7282;
 }
+
+@media (max-width: 768px) {
+  .nav-box {
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+  .footer-cookie {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+  }
+  .footer-cookie-nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .footer-cookie-nav p {
+    padding-top: 0;
+  }
+  .footer-txt {
+    padding-top: 16px;
+  }
+}

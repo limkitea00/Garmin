@@ -150,3 +150,44 @@
 .race-box-txt p {
   color: #99a1af;
 }
+
+@media (max-width: 768px) {
+  .trail-container {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 32px;
+  }
+  .trail-img img {
+    width: 100%;
+    height: auto;
+  }
+  .trail-title {
+    font-size: 32px;
+  }
+  .trail-txt p {
+    font-size: 15px;
+  }
+  .race-container {
+    flex-direction: column-reverse;
+    padding: 40px 20px;
+    gap: 32px;
+  }
+  .race-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+  .race-title {
+    font-size: 32px;
+  }
+  .race-title span {
+    font-size: 32px;
+  }
+  .race-box {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .race-box-txt {
+    width: 100%;
+  }
+}

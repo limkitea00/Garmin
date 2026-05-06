@@ -100,3 +100,43 @@
   padding-top: 63px;
   width: 600px;
 }
+
+@media (max-width: 768px) {
+  .visual-text h1 {
+    font-size: 40px;
+  }
+  .AMOLED {
+    font-size: 14px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+  }
+  .visual-btn {
+    gap: 12px;
+    margin-bottom: 40px;
+  }
+  .visual-buy-btn,
+  .visual-btn2 {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
+  .visual-min-txt {
+    width: 100%;
+    gap: 24px;
+    padding-top: 24px;
+  }
+  .min-txt {
+    font-size: 22px;
+  }
+  .visual-min-box p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .visual-text h1 {
+    font-size: 30px;
+  }
+  .visual-min-txt {
+    gap: 16px;
+  }
+}

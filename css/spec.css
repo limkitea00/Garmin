@@ -7,8 +7,10 @@
   align-items: center;
   justify-content: center;
   padding: 32px;
+  padding-bottom: 60px;
 }
 .spec-txt {
+  padding-top: 40px;
   font-size: 60px;
   font-weight: medium;
   color: #fff;
@@ -91,4 +93,39 @@
 }
 .basic p{
     color: #99a1af;
+}
+
+@media (max-width: 768px) {
+  .spec-txt {
+    font-size: 36px;
+    padding-top: 24px;
+  }
+  .spec-title {
+    font-size: 14px;
+    padding-bottom: 32px;
+  }
+  .spec-box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .spec-box {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .spec-box-txt-wrap {
+    width: 90%;
+  }
+  .spec-basic-box {
+    width: 100%;
+    height: auto;
+    padding: 24px 0;
+    gap: 0;
+  }
+  .basic .blue-txt {
+    font-size: 24px;
+  }
+  .basic p {
+    font-size: 13px;
+  }
 }

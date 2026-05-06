@@ -10,7 +10,7 @@
 .ready-box{
     background-color: #000;
     width: 1224px;
-    height: 358px;
+    /* height: 358px; */
     border: 1px solid #5d6bff;
     border-radius: 24px;
 }
@@ -33,6 +33,7 @@
     align-items: center;
     gap: 16px;
     padding: 20px 0;
+    padding-bottom: 50px;
 }
 .last-buy-btn{
     display: flex;
@@ -43,6 +44,7 @@
     width: 210px;
     line-height: 50px;
     border-radius: 33px;
+
 }
 .last-btn{
     display: flex;
@@ -86,4 +88,38 @@
 .last-box p{
     font-size: 14px;
     color: #99A1AF;
+}
+
+@media (max-width: 768px) {
+  .ready-box {
+    width: 95%;
+  }
+  .ready-title {
+    font-size: 36px;
+    padding-top: 32px;
+  }
+  .ready-txt {
+    font-size: 15px;
+    padding: 0 16px;
+  }
+  .last-btn-box {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  .last-buy-btn,
+  .last-btn {
+    width: 80%;
+  }
+  .last-box-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 60px;
+    gap: 16px;
+  }
+  .last-box {
+    width: 100%;
+    height: auto;
+    padding: 32px 20px;
+  }
 }

@@ -62,3 +62,8 @@ a {
 .purple{
   color: var(--purple) !important;
 }
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 20px;
+  }
+}

@@ -12,9 +12,9 @@
   background-color: transparent;
   transition: all 0.3s;
 }
-header.scrolled{
+header.scrolled {
   background-color: rgb(0, 0, 0);
-  color: #fff#000000;
+  color: #000000;
 }
 
 .logo {
@@ -31,7 +31,7 @@ header.scrolled{
   align-items: center;
 }
 .header-menu a {
-  font-weight: medium;  
+  font-weight: medium;
   font-size: 16px;
   color: #fff;
 }
@@ -45,4 +45,41 @@ header.scrolled{
   line-height: 32px;
   border-radius: 33px;
   color: #fff;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 0 4%;
+  }
+
+  .logo a {
+    font-size: 18px;
+  }
+
+  .header-menu {
+    gap: 16px;
+  }
+
+  .header-menu a {
+    font-size: 13px;
+  }
+
+  .header-btn {
+    font-size: 13px;
+    width: 68px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-menu {
+    gap: 10px;
+  }
+
+  .header-menu a {
+    font-size: 12px;
+  }
+
+  .logo a {
+    font-size: 16px;
+  }
 }
