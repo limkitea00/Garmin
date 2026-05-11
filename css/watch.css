@@ -1,3 +1,4 @@
+/* ===== BASE: 360px (모바일 우선) ===== */
 .watch-color {
   background: linear-gradient(#162138 0%, #1a2c50 100%);
 }
@@ -7,42 +8,56 @@
   justify-content: center;
   flex-direction: column;
   color: #99a1af;
-  margin-bottom: 140px;
+  margin-bottom: 32px;
+  text-align: center;
 }
 .watch-txt {
-  padding-top: 40px;
+  padding-top: 36px;
   color: #fff;
-  font-size: 60px;
+  font-size: 24px;
   font-weight: medium;
 }
-.watch-img{
-   width: 538px;
+.watch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 48px;
+}
+.watch-img {
+  width: 200px;
   position: relative;
+  height: 177px;
 }
 .watch-img img {
   width: 100%;
-  /* display: block; */
-  /* width: 538px;
-  height: 475px; */
 }
-.w-img{
-position: absolute;
-top: 0;
-left: 0;
-display: none;
+.w-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
-.w-img.active{
-display: block;
+.w-img.active {
+  display: block;
+}
+
+.watch-choice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .watch-box {
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
   background-color: var(--watch-box);
-  width: 500px;
-  height: 110px;
+  width: 90%;
+  max-width: 360px;
+  height: 80px;
   border-radius: 14px;
-  margin-bottom: 73px;
+  margin-bottom: 8px;
 }
 .watch-box:hover,
 .watch-box.active {
@@ -50,43 +65,68 @@ display: block;
   border: 1px solid #2b7fff;
 }
 .color-black {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: linear-gradient(135deg, #1e2939 0%, #030712 100%);
-  margin-left: 44px;
+  margin-left: 16px;
 }
 .color-blue {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: linear-gradient(135deg, #00d3f3 0%, #2b7fff 100%);
-  margin-left: 44px;
+  margin-left: 16px;
 }
 .color-white {
-  width: 64px;
-  height: 64px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: linear-gradient(135deg, #ffffff 0%, #cecece 100%);
-  margin-left: 44px;
+  margin-left: 16px;
 }
 .color-txt p {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: medium;
   color: #fff;
-  white-space: nowrap;
 }
 .color-txt p:last-child {
-  font-size: 14;
+  font-size: 12px;
   font-weight: medium;
   color: #99a1af;
 }
-.watch {
-  display: flex;
-  justify-content: space-around;
+
+/* ========== 480px ========== */
+@media (min-width: 480px) {
+  .watch-txt {
+    font-size: 28px;
+  }
+  .watch-img {
+    width: 240px;
+    height: 212px;
+  }
+  .watch-box {
+    height: 90px;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  .color-black,
+  .color-blue,
+  .color-white {
+    width: 48px;
+    height: 48px;
+    margin-left: 24px;
+  }
+  .color-txt p {
+    font-size: 16px;
+  }
+  .color-txt p:last-child {
+    font-size: 13px;
+  }
 }
 
-@media (max-width: 768px) {
+/* ========== 768px ========== */
+@media (min-width: 768px) {
   .watch-txt {
     font-size: 36px;
   }
@@ -94,35 +134,72 @@ display: block;
     margin-bottom: 40px;
   }
   .watch {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
+    gap: 40px;
+    padding-bottom: 60px;
   }
   .watch-img {
-    width: 280px;
-    height: 248px;
-  }
-  .watch-choice {
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
+    width: 300px;
+    height: 265px;
   }
   .watch-box {
     width: 90%;
-    max-width: 400px;
-    height: auto;
-    padding: 16px;
+    max-width: 420px;
+    height: 100px;
     margin-bottom: 12px;
   }
-  .color-black{
-    margin: 0;
+  .color-black,
+  .color-blue,
+  .color-white {
+    width: 56px;
+    height: 56px;
+    margin-left: 32px;
   }
-  .color-blue{
-    margin: 0;
+  .color-txt p {
+    font-size: 18px;
   }
-  .color-white{
-    margin: 0;
+  .color-txt p:last-child {
+    font-size: 13px;
+  }
+}
+
+/* ========== 1280px ========== */
+@media (min-width: 1280px) {
+  .watch-txt {
+    font-size: 60px;
+  }
+  .watch-title {
+    margin-bottom: 140px;
+  }
+  .watch {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0;
+    padding-bottom: 0;
+  }
+  .watch-img {
+    width: 538px;
+    height: auto;
+  }
+  .watch-choice {
+    width: auto;
+    align-items: flex-start;
+  }
+  .watch-box {
+    width: 500px;
+    height: 110px;
+    margin-bottom: 73px;
+  }
+  .color-black,
+  .color-blue,
+  .color-white {
+    width: 64px;
+    height: 64px;
+    margin-left: 44px;
+  }
+  .color-txt p {
+    font-size: 20px;
+  }
+  .color-txt p:last-child {
+    font-size: 14px;
   }
 }

@@ -1,125 +1,221 @@
-.last{
-    background: linear-gradient(#1f3f80 0%, #999999 100%);
+/* ===== BASE: 360px (모바일 우선) ===== */
+.last {
+  background: linear-gradient(#1f3f80 0%, #999999 100%);
 }
-.ready-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 0;
+.ready-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 12px;
 }
-.ready-box{
-    background-color: #000;
-    width: 1224px;
-    /* height: 358px; */
-    border: 1px solid #5d6bff;
-    border-radius: 24px;
+.ready-box {
+  background-color: #000;
+  width: 100%;
+  border: 1px solid #5d6bff;
+  border-radius: 16px;
 }
-.ready-title{
-    font-size: 60px;
-    font-weight: medium;
-    color: #fff;
-    text-align: center;
-    padding-top: 46px;
-    padding-bottom: 20px;
+.ready-title {
+  font-size: 24px;
+  font-weight: medium;
+  color: #fff;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 16px;
 }
-.ready-txt{
-    color: #D1D5DC;
-    text-align: center;
-    font-size: 20px;
+.ready-txt {
+  color: #d1d5dc;
+  text-align: center;
+  font-size: 13px;
+  padding: 0 16px;
 }
-.last-btn-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding: 20px 0;
-    padding-bottom: 50px;
+.last-btn-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 0 28px;
 }
-.last-buy-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: var(--btn);
-    width: 210px;
-    line-height: 50px;
-    border-radius: 33px;
+.last-buy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--btn);
+  width: 90%;
+  max-width: 300px;
+  line-height: 44px;
+  border-radius: 33px;
+  color: #fff;
+  font-size: 14px;
+}
+.last-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 90%;
+  max-width: 300px;
+  line-height: 44px;
+  background-color: #000;
+  border: 1px solid #4a5565;
+  border-radius: 33px;
+  color: #fff;
+  font-size: 14px;
+}
+.last-box-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 12px 48px;
+}
+.last-box {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  padding: 28px 20px;
+  background-color: rgba(16, 24, 40, 0.5);
+  border: 1px solid #1e2939;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.last-box img {
+  padding-bottom: 20px;
+}
+.last-box .big-txt {
+  font-size: 18px;
+  font-weight: medium;
+  color: #fff;
+  padding-bottom: 6px;
+}
+.last-box p {
+  font-size: 13px;
+  color: #99a1af;
+}
 
-}
-.last-btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 145px;
-    line-height: 50px;
-    background-color: #000;
-    border: 1px solid #4A5565;
-    border-radius: 33px;
-    color: #fff;
-}
-.last-box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    padding-bottom: 100px;
-}
-.last-box{
-    width: 390px;
-    height: 250px;
-    background-color: rgba(16, 24, 40, 0.5);
-    border: 1px solid #1E2939;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.last-box img{
-    padding-bottom: 30px;
-}
-.last-box .big-txt{
-    font-size: 24px;
-    font-weight: medium;
-    color: #fff;
-    padding-bottom: 8px;
-}
-.last-box p{
-    font-size: 14px;
-    color: #99A1AF;
-}
-
-@media (max-width: 768px) {
-  .ready-box {
-    width: 95%;
-  }
+/* ========== 480px ========== */
+@media (min-width: 480px) {
   .ready-title {
-    font-size: 36px;
-    padding-top: 32px;
+    font-size: 28px;
   }
   .ready-txt {
-    font-size: 15px;
-    padding: 0 16px;
-  }
-  .last-btn-box {
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
+    font-size: 14px;
   }
   .last-buy-btn,
   .last-btn {
-    width: 80%;
+    font-size: 15px;
+  }
+  .last-box .big-txt {
+    font-size: 20px;
+  }
+  .last-box p {
+    font-size: 14px;
+  }
+}
+
+/* ========== 768px ========== */
+@media (min-width: 768px) {
+  .ready-box-container {
+    padding: 56px 16px;
+  }
+  .ready-box {
+    border-radius: 20px;
+  }
+  .ready-title {
+    font-size: 36px;
+    padding-top: 36px;
+  }
+  .ready-txt {
+    font-size: 16px;
+    padding: 0 24px;
+  }
+  .last-btn-box {
+    flex-direction: row;
+    gap: 14px;
+    padding: 20px 0 40px;
+  }
+  .last-buy-btn {
+    width: 220px;
+    max-width: none;
+    line-height: 50px;
+  }
+  .last-btn {
+    width: 155px;
+    max-width: none;
+    line-height: 50px;
   }
   .last-box-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px 60px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 16px 72px;
     gap: 16px;
   }
   .last-box {
-    width: 100%;
-    height: auto;
+    width: calc(50% - 8px);
+    max-width: 340px;
     padding: 32px 20px;
+  }
+  .last-box .big-txt {
+    font-size: 22px;
+  }
+}
+
+/* ========== 1280px ========== */
+@media (min-width: 1280px) {
+  .ready-box-container {
+    padding: 80px 0;
+  }
+  .ready-box {
+    width: 1224px;
+    border-radius: 24px;
+  }
+  .ready-title {
+    font-size: 60px;
+    padding-top: 46px;
+    padding-bottom: 20px;
+  }
+  .ready-txt {
+    font-size: 20px;
+    padding: 0;
+  }
+  .last-btn-box {
+    gap: 16px;
+    padding: 20px 0 50px;
+  }
+  .last-buy-btn {
+    width: 210px;
+    gap: 10px;
+  }
+  .last-btn {
+    width: 145px;
+    gap: 10px;
+  }
+  .last-box-container {
+    flex-wrap: nowrap;
+    gap: 32px;
+    padding-bottom: 100px;
+    padding: 0 0 100px;
+  }
+  .last-box {
+    width: 390px;
+    max-width: none;
+    height: 250px;
+    padding: 0;
+  }
+  .last-box img {
+    padding-bottom: 30px;
+  }
+  .last-box .big-txt {
+    font-size: 24px;
+    padding-bottom: 8px;
+  }
+  .last-box p {
+    font-size: 14px;
   }
 }

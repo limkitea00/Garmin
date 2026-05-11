@@ -1,75 +1,82 @@
+/* ===== BASE: 360px (모바일 우선) ===== */
 .features {
   background-color: var(--bg);
   width: 100%;
 }
 .title {
-  padding-top: 86px;
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
+  text-align: center;
 }
 .title h1 {
-  font-size: 60px;
+  font-size: 24px;
   font-weight: medium;
 }
 .title p {
-  padding-top: 30px;
-  padding-bottom: 108px;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  font-size: 12px;
   color: #99a1af;
 }
 .features-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
 }
 .ft-box {
   color: #fff;
   border: 1px solid #1e2939;
   border-radius: 16px;
-  /* width: 390px; */
-  width: calc((100% - 64px) / 3);
-  height: 250px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
   background-color: var(--box2);
 }
 .icon {
-  padding-top: 33px;
-  padding-left: 33px;
+  padding-top: 24px;
+  padding-left: 24px;
 }
 .ft-box-txt h3 {
-  padding: 12px 33px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
 .ft-box-txt p {
-  padding: 12px 33px;
+  padding: 8px 20px;
+  font-size: 12px;
 }
+
 .partner {
   color: #fff;
   display: flex;
-  justify-content: center;
-  padding-top: 96px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 48px;
 }
 .partner img {
-  width: 600px;
-  height: 300px;
-  padding-right: 25px;
-  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  padding-bottom: 24px;
 }
 .partner-txt {
   display: flex;
   flex-direction: column;
 }
 .partner-txt-title {
-  font-size: 36px;
+  font-size: 20px;
   font-weight: medium;
+  margin-bottom: 16px;
 }
 .feature-item {
   display: flex;
-  gap: 16px;
+  gap: 12px;
 }
-/* 번호 뱃지 */
 .badge {
-  min-width: 44px;
-  height: 44px;
+  min-width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: var(--bedge);
   display: flex;
@@ -77,57 +84,134 @@
   justify-content: center;
   color: var(--blue);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 14px;
   flex-shrink: 0;
 }
-
-/* 텍스트 */
 .feature-text h3 {
   color: #fff;
   font-weight: medium;
-  font-size: 20px;
-  margin-bottom: 6px;
+  font-size: 15px;
+  margin-bottom: 4px;
 }
-
 .feature-text p {
   color: #99a1af;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.6;
 }
-@media(max-width:768px){
-  .ft-box{
-    width: calc((100% - 32px) / 2);
-    height: auto;
-    padding-bottom: 20px;
+
+/* ========== 480px ========== */
+@media (min-width: 480px) {
+  .title h1 {
+    font-size: 28px;
+  }
+  .title p {
+    font-size: 13px;
+    padding-bottom: 40px;
+  }
+  .ft-box {
+    width: calc((100% - 16px) / 2);
+  }
+  .partner-txt-title {
+    font-size: 22px;
+  }
+  .feature-text h3 {
+    font-size: 16px;
+  }
+  .feature-text p {
+    font-size: 14px;
+  }
+}
+
+/* ========== 768px ========== */
+@media (min-width: 768px) {
+  .title {
+    padding-top: 56px;
   }
   .title h1 {
     font-size: 36px;
-    text-align: center;
   }
   .title p {
     font-size: 14px;
-    text-align: center;
     padding-bottom: 48px;
   }
+  .ft-box {
+    width: calc((100% - 32px) / 2);
+  }
+  .icon {
+    padding-top: 33px;
+    padding-left: 33px;
+  }
+  .ft-box-txt h3 {
+    padding: 12px 33px;
+    font-size: 16px;
+  }
+  .ft-box-txt p {
+    padding: 12px 33px;
+    font-size: 14px;
+  }
   .partner {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 48px;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 72px;
   }
   .partner img {
-    width: 100%;
-    height: auto;
-    padding-right: 0;
-    padding-bottom: 24px;
+    width: 480px;
+    height: 280px;
+    padding-right: 25px;
+    padding-bottom: 50px;
   }
   .partner-txt-title {
     font-size: 26px;
-    margin-bottom: 16px;
+  }
+  .badge {
+    min-width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+  .feature-item {
+    gap: 16px;
   }
 }
 
-@media (max-width: 480px) {
+/* ========== 1280px ========== */
+@media (min-width: 1280px) {
+  .title {
+    padding-top: 86px;
+  }
+  .title h1 {
+    font-size: 60px;
+  }
+  .title p {
+    padding-top: 30px;
+    padding-bottom: 108px;
+    font-size: 16px;
+  }
+  .features-box {
+    gap: 32px;
+  }
   .ft-box {
-    width: 100%;
+    width: calc((100% - 64px) / 3);
+    height: 250px;
+  }
+  .partner {
+    padding-top: 96px;
+  }
+  .partner img {
+    width: 600px;
+    height: 300px;
+  }
+  .partner-txt-title {
+    font-size: 36px;
+  }
+  .badge {
+    min-width: 44px;
+    height: 44px;
+    font-size: 16px;
+  }
+  .feature-text h3 {
+    font-size: 20px;
+  }
+  .feature-text p {
+    font-size: 16px;
   }
 }

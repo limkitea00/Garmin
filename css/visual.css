@@ -1,3 +1,4 @@
+/* ===== BASE: 360px (모바일 우선) ===== */
 .visual {
   position: relative;
   width: 100%;
@@ -28,7 +29,6 @@
   border: 1px solid rgba(81, 162, 255, 0.3);
   border-radius: 33px;
   color: #8ec5ff;
-  align-items: center;
   text-align: center;
 }
 .visual-text {
@@ -40,26 +40,27 @@
   transform: translateY(-35%);
 }
 .visual-text h1 {
-  font-size: 80px;
+  font-size: 26px;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 }
 .AMOLED {
   color: #d1d5dc;
-  margin-top: 25px;
-  margin-bottom: 33px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 14px;
 }
 .visual-btn {
   display: flex;
-  gap: 30px;
-  margin-bottom: 175px;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
 }
 .visual-buy-btn {
   text-align: center;
-  align-items: center;
   font-weight: medium;
-  font-size: 20px;
+  font-size: 12px;
   background-color: var(--btn);
-  padding: 15px 20px;
+  padding: 8px 12px;
   border-radius: 33px;
 }
 .visual-buy-btn a {
@@ -67,11 +68,10 @@
 }
 .visual-btn2 {
   text-align: center;
-  align-items: center;
   font-weight: medium;
-  font-size: 20px;
+  font-size: 12px;
   background-color: #fff;
-  padding: 15px 20px;
+  padding: 8px 12px;
   border-radius: 33px;
 }
 .visual-btn2 a {
@@ -79,8 +79,11 @@
 }
 .visual-min-txt {
   display: flex;
-  gap: 85px;
+  gap: 14px;
   align-items: center;
+  border-top: 1px solid #9498a0;
+  padding-top: 20px;
+  width: 100%;
 }
 .visual-min-box {
   display: flex;
@@ -88,22 +91,50 @@
 }
 .min-txt {
   color: var(--blue) !important;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: bold;
 }
 .visual-min-box p {
   color: #99a1af;
   white-space: nowrap;
-}
-.visual-min-txt {
-  border-top: 1px solid #9498a0;
-  padding-top: 63px;
-  width: 600px;
+  font-size: 11px;
 }
 
-@media (max-width: 768px) {
+/* ========== 480px ========== */
+@media (min-width: 480px) {
   .visual-text h1 {
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .AMOLED {
+    font-size: 13px;
+    margin-top: 12px;
+    margin-bottom: 18px;
+  }
+  .visual-btn {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .visual-buy-btn,
+  .visual-btn2 {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+  .visual-min-txt {
+    gap: 20px;
+    padding-top: 24px;
+  }
+  .min-txt {
+    font-size: 20px;
+  }
+  .visual-min-box p {
+    font-size: 12px;
+  }
+}
+
+/* ========== 768px ========== */
+@media (min-width: 768px) {
+  .visual-text h1 {
+    font-size: 42px;
   }
   .AMOLED {
     font-size: 14px;
@@ -111,32 +142,55 @@
     margin-bottom: 20px;
   }
   .visual-btn {
+    flex-wrap: nowrap;
     gap: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .visual-buy-btn,
   .visual-btn2 {
-    font-size: 14px;
-    padding: 10px 14px;
+    font-size: 15px;
+    padding: 12px 16px;
   }
   .visual-min-txt {
-    width: 100%;
-    gap: 24px;
-    padding-top: 24px;
+    gap: 32px;
+    padding-top: 28px;
   }
   .min-txt {
-    font-size: 22px;
+    font-size: 24px;
   }
   .visual-min-box p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
-@media (max-width: 480px) {
+/* ========== 1280px ========== */
+@media (min-width: 1280px) {
   .visual-text h1 {
-    font-size: 30px;
+    font-size: 80px;
+  }
+  .AMOLED {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 33px;
+  }
+  .visual-btn {
+    gap: 30px;
+    margin-bottom: 175px;
+  }
+  .visual-buy-btn,
+  .visual-btn2 {
+    font-size: 20px;
+    padding: 15px 20px;
   }
   .visual-min-txt {
-    gap: 16px;
+    width: 600px;
+    gap: 85px;
+    padding-top: 63px;
+  }
+  .min-txt {
+    font-size: 36px;
+  }
+  .visual-min-box p {
+    font-size: 14px;
   }
 }
