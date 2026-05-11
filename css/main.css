@@ -58,21 +58,21 @@ a {
   color: var(--purple) !important;
 }
 
-/* ========== 480px ========== */
+/* 480px */
 @media (min-width: 480px) {
   .inner {
     padding: 0 16px;
   }
 }
 
-/* ========== 768px ========== */
+/* 768px */
 @media (min-width: 768px) {
   .inner {
     padding: 0 20px;
   }
 }
 
-/* ========== 1280px ========== */
+/* 1280px */
 @media (min-width: 1280px) {
   .inner {
     width: 95%;

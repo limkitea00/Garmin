@@ -1,4 +1,4 @@
-/* ===== BASE: 360px (모바일 우선) ===== */
+
 .features {
   background-color: var(--bg);
   width: 100%;
@@ -99,7 +99,7 @@
   line-height: 1.6;
 }
 
-/* ========== 480px ========== */
+/* 480px */
 @media (min-width: 480px) {
   .title h1 {
     font-size: 28px;
@@ -122,7 +122,7 @@
   }
 }
 
-/* ========== 768px ========== */
+/* 768px */
 @media (min-width: 768px) {
   .title {
     padding-top: 56px;
@@ -173,7 +173,7 @@
   }
 }
 
-/* ========== 1280px ========== */
+/* 1280px */
 @media (min-width: 1280px) {
   .title {
     padding-top: 86px;

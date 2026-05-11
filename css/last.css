@@ -1,4 +1,4 @@
-/* ===== BASE: 360px (모바일 우선) ===== */
+
 .last {
   background: linear-gradient(#1f3f80 0%, #999999 100%);
 }
@@ -98,7 +98,7 @@
   color: #99a1af;
 }
 
-/* ========== 480px ========== */
+/* 480px */
 @media (min-width: 480px) {
   .ready-title {
     font-size: 28px;
@@ -118,7 +118,7 @@
   }
 }
 
-/* ========== 768px ========== */
+/* 768px */
 @media (min-width: 768px) {
   .ready-box-container {
     padding: 56px 16px;
@@ -166,7 +166,7 @@
   }
 }
 
-/* ========== 1280px ========== */
+/* 1280px */
 @media (min-width: 1280px) {
   .ready-box-container {
     padding: 80px 0;
